@@ -1,0 +1,88 @@
+:root{
+--Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+--Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+--Grayish-Blue: hsl(212, 23%, 69%);
+--Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    font-family: "Manrope", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 2rem;
+    background-color: var(--Light-Grayish-Blue);
+}
+
+.opacity-text{
+    font-weight: bold;
+    color: var(--Grayish-Blue)
+}
+
+.dark-text{
+    font-weight: bold;
+    color: var(--Very-Dark-Grayish-Blue)
+}
+
+.image{
+    background-image: url(./images/drawers.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    height: 250px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.container{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    
+    background-color: white;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.profile-img{
+    background-image: url(./images/avatar-michelle.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+
+.logo-inner{
+    padding: 1rem;
+    background-color: var(--Light-Grayish-Blue);
+    border-radius: 50%;
+
+}
