@@ -19,18 +19,25 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    padding: 2rem;
+    padding: 4rem;
     background-color: var(--Light-Grayish-Blue);
+   
+    
 }
 
 .opacity-text{
-    font-weight: bold;
-    color: var(--Grayish-Blue)
+    
+    color: var(--Grayish-Blue);
+    font-size: 13px;
+    
+    line-height: 1.2rem;
+    
 }
 
 .dark-text{
     font-weight: bold;
-    color: var(--Very-Dark-Grayish-Blue)
+    color: var(--Very-Dark-Grayish-Blue);
+    
 }
 
 .image{
@@ -39,7 +46,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     
-    height: 250px;
+    height: 175px;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
@@ -50,21 +57,26 @@ body{
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     
+    
     background-color: white;
+    width: 100%;
+    max-width: 700px;
 }
 
 .information{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     padding: 2rem;
+    padding-bottom: 1rem;
 }
 
 .profile{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -73,16 +85,79 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
 }
 
 
 
 .logo-inner{
-    padding: 1rem;
+    padding: 0.5rem;
     background-color: var(--Light-Grayish-Blue);
     border-radius: 50%;
+    
 
+}
+
+
+
+.pop-up-overlay{
+    background-color: var(--Very-Dark-Grayish-Blue);
+    height: 75px;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    display: flex;
+    
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 1rem;
+    
+   
+}
+
+.title{
+    color: var(--Grayish-Blue);
+    letter-spacing: 0.3rem;
+    font-weight: bold;
+}
+
+.icons{
+    display: flex;
+    gap: 1rem;
+}
+
+
+
+.display-nothing{
+    display: none;
+}
+
+
+
+
+
+
+
+
+@media(min-width:678px){
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .information{
+        width: 65%;
+        padding: 3rem;
+        justify-content: flex-start;
+        padding-bottom: 1rem;
+        
+    }
+
+    .image{
+        width: 35%;
+        height: 100%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1rem;
+    }
 }
